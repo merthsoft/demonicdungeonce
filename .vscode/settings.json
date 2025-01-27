@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "debug.h": "c",
+        "main.h": "c",
+        "ability.h": "c",
+        "keypadc.h": "c"
+    }
+}

@@ -1,0 +1,68 @@
+Abilities:
+
+Archer:
+    - Focus - Next shot guaranteed hit
+    - Fire Arrow - Sets target on fire
+    - Long shot* - Hits backrow enemies hard
+    - Short shot* - Hits front row enemies not so hard
+    - Field medicine* - Small Heals an ally, puts them out, cures poison, bosts healing
+    - <Something that heals another or selfs faith>*
+
+Priest:
+    - Lay Hands - Heals faith and HP, self heals faith
+    - Annoint* - Heals large amounts of faith
+    - Speak Tongues* - Heals party faith
+    - <Buff>*
+    - <Buff2>*
+    - <Buff & Damage?>*
+
+Mage:
+    - Fire Ball - Sets enemies on fire
+    - Lightning - Stuns enemies
+    - Staff Bash* - Mele attack in front row
+    - <Poison attack?>*
+    - <Heal spell?>*
+    - <Buff spell?>*
+    
+Rogue (I want a different name):
+    - Dagger* - Stabby stabby
+    - Poison Jab - Lower damage stabby that poisons
+    - Posion Dart - Poison enemies from the back
+    - Blackjack - Damage and stun
+    - Fade - perfect dodge
+    - Antidote* - Cures poison, small heal
+
+Axeman:
+    - Adrenaline Rush - Small heal, and go first next round
+    - Shout* - Stuns
+    - Axe Slash* - Melee, high damage
+    - Shove* - Pushes enemy back 
+    - Axe Throw* - throw your axe and move forward one
+    - <Buff>
+
+Knight*:
+    - Zweihander - Slash at enemy, high damage
+    - Pommel - Smash 'em, stuns?
+    - Pray - Small heal, faith heal
+    - Field Orders - increase ally speed and dodge, make self immovable
+    - Charge - Move forward, low accuracy attack
+    - <Buff>
+
+Adventurer (whip)*:
+    - Flick whip - High crit, low damage attack, chance to stun
+    - Whip pull - Pulls enemy forward
+    - Plunder - Produces an item
+    - <Buff>
+    -
+    -
+
+Blacksmith (hammer)*:
+    - Hammer - Melee attack
+    - Field Repair - Provides extra defense to ally
+    - Sharpen - Provides extra crit chance to ally
+    - <Attack>
+    -
+    -
+
+*To program
+<Suggestion>

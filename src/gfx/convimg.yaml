@@ -1,0 +1,51 @@
+palettes:
+  - name: global_palette
+    fixed-entries:
+      - image: mystic-16-1x.png
+    images: automatic
+
+converts:
+  - name: sprites
+    palette: global_palette
+    transparent-index: 17
+    tilesets:
+      tile-width: 16
+      tile-height: 16
+      images:
+        - heroes.png
+        - monsters.png
+        - items.png
+  - name: tiles
+    palette: global_palette
+    tilesets:
+      tile-width: 16
+      tile-height: 16
+      images:
+        - dungeon.png
+        - frames.png
+        - ailments.png
+  - name: elements
+    palette: global_palette
+    transparent-index: 17
+    images:
+      - bar_empty.png
+      - health_piece.png
+      - divinity_piece.png
+      - divider.png
+  - name: selectors
+    palette: global_palette
+    tilesets:
+      tile-width: 12
+      tile-height: 14
+      images:
+        - selectors.png
+outputs:
+  - type: c
+    include-file: gfx.h
+    palettes:
+      - global_palette
+    converts:
+      - sprites
+      - tiles
+      - elements
+      - selectors
