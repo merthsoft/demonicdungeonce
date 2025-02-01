@@ -3,6 +3,7 @@
         "debug.h": "c",
         "main.h": "c",
         "ability.h": "c",
-        "keypadc.h": "c"
+        "keypadc.h": "c",
+        "hero.h": "c"
     }
 }

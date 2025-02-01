@@ -3,11 +3,13 @@
 
 #include <stdint.h>
 
+#include "hero.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef enum AbilityType { at_Melee, at_Ranged, at_Magic } AbilityType;
+typedef enum AbilityType { at_None, at_Melee, at_Ranged, at_Magic } AbilityType;
 
 typedef enum AbilityTargetType { 
     att_None,
@@ -18,10 +20,11 @@ typedef enum AbilityTargetType {
     att_Self
 } AbilityTargetType;
 
+#define NumStatusEffects 8
 typedef enum StatusEffect { 
     se_None         = 0,
     se_Ablaze       = 1 << 1,
-    se_Poison       = 1 << 1,
+    se_Poison       = 1 << 2,
     se_Stun         = 1 << 3,
     se_CantMiss     = 1 << 4,
     se_FirstMove    = 1 << 5,
@@ -71,6 +74,19 @@ typedef struct Ability {
     AbilityDefinition Primary;
     AbilityDefinition* Secondary;
 } Ability;
+
+extern Ability NullAbility;
+
+#define NumAbilitiesPerClass 6
+extern Ability* NullAbilities[NumAbilitiesPerClass];
+
+extern Ability* ArcherAbilities[NumAbilitiesPerClass];
+extern Ability* AxemamAbilities[NumAbilitiesPerClass];
+extern Ability* MageAbilities[NumAbilitiesPerClass];
+extern Ability* PriestAbilities[NumAbilitiesPerClass];
+extern Ability* RogueAbilities[NumAbilitiesPerClass];
+
+extern Ability** HeroAbilities[NumHeroClasses];
 
 #ifdef __cplusplus
 }

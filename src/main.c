@@ -6,8 +6,10 @@
 #include <math.h>
 #include <string.h>
 
-#include "const.h"
 #include "gfx/gfx.h"
+
+#include "ability.h"
+#include "const.h"
 #include "hero.h"
 #include "render.h"
 
@@ -16,7 +18,7 @@ void main_draw(GameState* gameState);
 
 Hero Kerm = {
     .Name = "Kerm",
-    .Class = hc_Barbarian,
+    .Class = hc_Axeman,
     .Palette = hp_Gray,
     .Health = 10,
     .Faith = 10,
@@ -24,7 +26,7 @@ Hero Kerm = {
 
 Hero Jon = {
     .Name = "TheStorm",
-    .Class = hc_Swordsman,
+    .Class = hc_Knight,
     .Palette = hp_Red,
     .Health = 10,
     .Faith = 10,
@@ -32,7 +34,7 @@ Hero Jon = {
 
 Hero Tari = {
     .Name = "Tari",
-    .Class = hc_Wizard,
+    .Class = hc_Mage,
     .Palette = hp_Purple,
     .Health = 10,
     .Faith = 10,
@@ -48,7 +50,7 @@ Hero ElfPrince = {
 
 int main(void) {
     while(kb_AnyKey());
-
+    
     GameState gameState;
     memset(&gameState, 0, sizeof(GameState));
     gameState.Party[0] = &ElfPrince;

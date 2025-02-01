@@ -5,10 +5,11 @@
 NAME = Dungeon
 ICON = iconc.png
 DESCRIPTION = "Demonic Dungeon"
-COMPRESSED = NO
+COMPRESSED = YES
+COMPRESSED_MODE ?= zx7
 ARCHIVED = NO
 
-CFLAGS = -Wall -Wextra -O0
+CFLAGS = -Wall -Wextra -Ofast
 CXXFLAGS = -Wall -Wextra -Oz
 
 # ----------------------------
