@@ -1,4 +1,5 @@
 #include "../ability.h"
+
 Ability Lightning = {
     .Name = "Lighting",
     .Description = "Stuns an enemy",

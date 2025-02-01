@@ -3,9 +3,10 @@
 
 #include <stdint.h>
 
-#include "ability_index_flags.h"
 #include "const.h"
-#include "status_effect.h"
+
+#include "ability_index_flags.h"
+#include "status_effect_flags.h"
 
 #ifdef __cplusplus
 extern "C" {

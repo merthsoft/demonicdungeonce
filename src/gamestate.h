@@ -4,6 +4,7 @@
 #include <time.h>
 
 #include "const.h"
+
 #include "hero.h"
 
 #ifdef __cplusplus
@@ -18,6 +19,7 @@ typedef struct GameState {
     uint8_t FrameNumber;
 
     Hero* Party[PartySize];
+    
     uint8_t SelectedHero;
     uint8_t SelectedEnemy;
     uint8_t SelectedMove;

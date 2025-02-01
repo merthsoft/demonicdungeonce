@@ -1,7 +1,6 @@
 #ifndef _ABILITY_INDEX_FLAGS_H_
 #define _ABILITY_INDEX_FLAGS_H_
 
-
 #ifdef __cplusplus
 extern "C" {
 #endif

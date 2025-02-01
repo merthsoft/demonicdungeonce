@@ -4,7 +4,8 @@
 #include <stdint.h>
 
 #include "const.h"
-#include "status_effect.h"
+
+#include "status_effect_flags.h"
 
 #ifdef __cplusplus
 extern "C" {

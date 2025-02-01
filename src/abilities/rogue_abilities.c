@@ -1,4 +1,5 @@
 #include "../ability.h"
+
 Ability PoisonJab = {
     .Name = "Poison Jab",
     .Description = "Stab an enemy with your poison dagger",

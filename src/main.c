@@ -1,17 +1,19 @@
 #include <graphx.h>
-#include <time.h>
-#include <sys/rtc.h>
-#include <sys/util.h>
 #include <keypadc.h>
 #include <math.h>
 #include <string.h>
+#include <time.h>
 
-#include "gfx/gfx.h"
+#include <sys/rtc.h>
+#include <sys/util.h>
+
+#include "const.h"
 
 #include "ability.h"
-#include "const.h"
 #include "hero.h"
 #include "render.h"
+
+#include "gfx/gfx.h"
 
 bool main_step(GameState* gameState);
 void main_draw(GameState* gameState);
