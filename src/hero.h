@@ -5,6 +5,10 @@
 
 #include "const.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define NumHeroClasses 8
 #define NumAbilitiesPerHero 4
 
@@ -46,5 +50,9 @@ typedef struct {
     uint8_t AbilityUnlockedFlag;
     uint8_t AbilityEnabledFlag;
 } Hero;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

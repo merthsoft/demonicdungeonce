@@ -6,6 +6,10 @@
 #include "const.h"
 #include "hero.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef enum GameMode { gm_Combat } GameMode;
 
 typedef struct GameState {
@@ -18,5 +22,9 @@ typedef struct GameState {
     uint8_t SelectedEnemy;
     uint8_t SelectedMove;
 } GameState;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
