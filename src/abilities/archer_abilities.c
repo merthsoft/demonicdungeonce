@@ -9,8 +9,7 @@ Ability Focus = {
         .AbilityType = at_Magic,
         .TargetType = att_Self,
         
-        .AppliedEffect = se_CantMiss,
-        .AppliedEffectTurnCount = 1,
+        .AppliedEffectsFlags = se_CantMiss,
     }
 };
 
@@ -27,9 +26,9 @@ Ability FireArrow = {
         .DamageModifier = -50,
         .CritModifier = -25,
 
-        .AppliedEffect = se_Ablaze,
-        .AppliedEffectAmount = 2,
-        .AppliedEffectTurnCount = 4,
+        .AppliedEffectsFlags = se_Ablaze,
+        .AppliedEffectsAmount = 2,
+        .AppliedEffectsTurnCount = 4,
     }
 };
 

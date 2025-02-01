@@ -11,9 +11,9 @@ Ability PoisonJab = {
 
         .DamageModifier = -25,
 
-        .AppliedEffect = se_Poison,
-        .AppliedEffectAmount = 1,
-        .AppliedEffectTurnCount = 4,
+        .AppliedEffectsFlags = se_Poison,
+        .AppliedEffectsAmount = 1,
+        .AppliedEffectsTurnCount = 4,
     }
 };
 
@@ -30,9 +30,9 @@ Ability PoisonDart = {
         .DamageModifier = -50,
         .CritModifier = 25,
 
-        .AppliedEffect = se_Poison,
-        .AppliedEffectAmount = 2,
-        .AppliedEffectTurnCount = 4,
+        .AppliedEffectsFlags = se_Poison,
+        .AppliedEffectsAmount = 2,
+        .AppliedEffectsTurnCount = 4,
     }
 };
 
@@ -46,7 +46,7 @@ Ability Blackjack = {
         .TargetType = att_Enemy,
         .RowMask = 0b1000,
 
-        .AppliedEffect = se_Stun,
+        .AppliedEffectsFlags = se_Stun,
     }
 };
 

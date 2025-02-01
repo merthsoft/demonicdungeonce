@@ -1,6 +1,7 @@
 #include <graphx.h>
 
 #include "render.h"
+
 #include "gfx/gfx.h"
 
 #define Party_Draw_Selector_Start_X 1
@@ -110,7 +111,7 @@ void Render_Combat_Frames() {
 }
 
 void Render_Hero(Hero* hero, uint8_t frameNumber, uint24_t x, uint8_t y, uint8_t scale_x, uint8_t scale_y) {
-    const gfx_sprite_t* sprite = (gfx_sprite_t*)heroes_tiles_data[hero->Class * NumSpriteFrames + hero->Palette * NumSpriteFrames * NumClasses +  frameNumber];
+    const gfx_sprite_t* sprite = (gfx_sprite_t*)heroes_tiles_data[hero->Class * NumSpriteFrames + hero->Palette * NumSpriteFrames * NumHeroClasses +  frameNumber];
     gfx_ScaledSprite_NoClip(sprite, x, y, scale_x, scale_y);
 }
 

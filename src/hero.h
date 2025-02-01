@@ -3,14 +3,13 @@
 
 #include <stdint.h>
 
+#include "ability_index_flags.h"
 #include "const.h"
+#include "status_effect.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#define NumHeroClasses 8
-#define NumAbilitiesPerHero 4
 
 typedef enum {
     hc_Rogue,
@@ -30,7 +29,7 @@ typedef enum {
     hp_Gray
 } HeroPalette;
 
-typedef struct {
+typedef struct Hero {
     const char* Name;
     
     HeroClass Class;
@@ -47,8 +46,12 @@ typedef struct {
     uint8_t Speed;
     uint8_t Dodge;
 
-    uint8_t AbilityUnlockedFlag;
-    uint8_t AbilityEnabledFlag;
+    AbilityIndexFlags AbilityUnlockedFlags;
+    AbilityIndexFlags AbilityEnabledFlags;
+
+    StatusEffectFlags StatusEffectsFlags;
+    uint8_t StatusEffectDuration[NumStatusEffects];
+    uint8_t StatusEffectAmount[NumStatusEffects];
 } Hero;
 
 #ifdef __cplusplus

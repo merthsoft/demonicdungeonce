@@ -12,7 +12,7 @@ Ability Lightning = {
         .DamageModifier = -25,
         .CritModifier = 25,
 
-        .AppliedEffect = se_Stun,
+        .AppliedEffectsFlags = se_Stun,
     }
 };
 
@@ -31,9 +31,9 @@ Ability FireBall = {
         .DamageModifier = -25,
         .CritModifier = 25,
 
-        .AppliedEffect = se_Ablaze,
-        .AppliedEffectAmount = 2,
-        .AppliedEffectTurnCount = 2,
+        .AppliedEffectsFlags = se_Ablaze,
+        .AppliedEffectsAmount = 2,
+        .AppliedEffectsTurnCount = 2,
     }
 };
 

@@ -3,7 +3,8 @@
 
 #include <stdint.h>
 
-#include "hero.h"
+#include "const.h"
+#include "status_effect.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -19,19 +20,6 @@ typedef enum AbilityTargetType {
     att_Party,
     att_Self
 } AbilityTargetType;
-
-#define NumStatusEffects 8
-typedef enum StatusEffect { 
-    se_None         = 0,
-    se_Ablaze       = 1 << 1,
-    se_Poison       = 1 << 2,
-    se_Stun         = 1 << 3,
-    se_CantMiss     = 1 << 4,
-    se_FirstMove    = 1 << 5,
-    se_LastMove     = 1 << 6,
-    se_PerfectDodge = 1 << 7,
-    se_Immovable    = 1 << 8
- } StatusEffect;
 
 typedef struct AbilityEffect {
     AbilityType AbilityType;
@@ -52,9 +40,9 @@ typedef struct AbilityEffect {
     int16_t AppliedDefenceModifier;
     int16_t AppliedDodgeModifier;
 
-    StatusEffect AppliedEffect;
-    uint8_t AppliedEffectTurnCount;
-    uint8_t AppliedEffectAmount;
+    StatusEffectFlags AppliedEffectsFlags;
+    uint8_t AppliedEffectsTurnCount;
+    uint8_t AppliedEffectsAmount;
 
     int8_t HealthRangeLow;
     int8_t HealthRangeHigh;
@@ -66,8 +54,8 @@ typedef struct AbilityEffect {
 } AbilityDefinition;
 
 typedef struct Ability {
-    char* Name;
-    char* Description;
+    const char* Name;
+    const char* Description;
 
     uint8_t RowMask;
 
@@ -77,7 +65,6 @@ typedef struct Ability {
 
 extern Ability NullAbility;
 
-#define NumAbilitiesPerClass 6
 extern Ability* NullAbilities[NumAbilitiesPerClass];
 
 extern Ability* ArcherAbilities[NumAbilitiesPerClass];

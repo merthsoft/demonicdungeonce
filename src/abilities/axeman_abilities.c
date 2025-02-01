@@ -9,7 +9,7 @@ Ability AdrenalineRush = {
         .AbilityType = at_Magic,
         .TargetType = att_Self,
         
-        .AppliedEffect = se_FirstMove,
+        .AppliedEffectsFlags = se_FirstMove,
         
         .HealthRangeLow = 2,
         .HealthRangeHigh = 4,
