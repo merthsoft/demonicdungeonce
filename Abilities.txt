@@ -64,5 +64,14 @@ Blacksmith (hammer)*:
     -
     -
 
+
+Fighter (fists)*: - Should do melee and debuffs, low damage, high crits
+    -
+    -
+    -
+    -
+    -
+    -
+
 *To program
 <Suggestion>

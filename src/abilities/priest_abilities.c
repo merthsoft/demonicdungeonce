@@ -14,7 +14,7 @@ Ability LayHands = {
         .HealthRangeHigh = 3
     },
 
-    .Secondary = &(AbilityDefinition){
+    .Secondary = &(AbilityEffect){
         .AbilityType = at_Magic,
         .TargetType = att_Self,
     

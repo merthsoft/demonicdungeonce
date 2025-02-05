@@ -11,7 +11,9 @@
 extern "C" {
 #endif
 
-typedef enum GameMode { gm_Combat } GameMode;
+typedef enum GameMode { 
+    gm_Combat,
+} GameMode;
 
 typedef struct GameState {
     GameMode GameMode;

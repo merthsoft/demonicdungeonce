@@ -162,7 +162,7 @@ void Render_Combat_Text(GameState* gameState) {
     gfx_PrintStringXY("Fire at a target", Combat_Mode_Frame_2_X + Frame_Margin, Combat_Mode_Frame_2_Y + Frame_Margin + 12);
     gfx_PrintStringXY("Ranged", Combat_Mode_Frame_2_X + Frame_Margin, Combat_Mode_Frame_2_Y + Frame_Margin + 22);
     gfx_PrintStringXY("Physical 3-5", Combat_Mode_Frame_2_X + Frame_Margin, Combat_Mode_Frame_2_Y + Frame_Margin + 32);
-
+    
     gfx_PrintStringXY("Quick", Combat_Mode_Frame_4_X + Frame_Margin, Combat_Mode_Frame_4_Y + Frame_Margin);
     gfx_PrintStringXY("Shot", Combat_Mode_Frame_4_X + Frame_Margin, Combat_Mode_Frame_4_Y + Frame_Margin + 10);
     gfx_PrintStringXY("Lob", Combat_Mode_Frame_4_X + F_Button_Width + Frame_Margin/2, Combat_Mode_Frame_4_Y + Frame_Margin);

@@ -2,7 +2,7 @@
 
 Ability NullAbility = {
     .Name = "NULL ABILITY",
-    .Description = "NULL ABILITY",
+    .Description = "This ability hasn't been implemneted yet",
 };
 
 Ability* NullAbilities[NumAbilitiesPerClass] = {

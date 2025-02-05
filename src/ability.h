@@ -5,13 +5,20 @@
 
 #include "const.h"
 
+#include "gamestate.h"
+
 #include "status_effect_flags.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef enum AbilityType { at_None, at_Melee, at_Ranged, at_Magic } AbilityType;
+typedef enum AbilityType { 
+    at_None,
+    at_Melee, 
+    at_Ranged, 
+    at_Magic 
+} AbilityType;
 
 typedef enum AbilityTargetType { 
     att_None,
@@ -21,6 +28,11 @@ typedef enum AbilityTargetType {
     att_Party,
     att_Self
 } AbilityTargetType;
+
+typedef enum GraphicalEffect {
+    ge_Standard,
+    ge_None,
+} GraphicalEffect;
 
 typedef struct AbilityEffect {
     AbilityType AbilityType;
@@ -52,7 +64,9 @@ typedef struct AbilityEffect {
     int8_t FaithRangeHigh;
 
     int8_t MoveAmount;
-} AbilityDefinition;
+
+    void (*GraphicalEffect)(GameState*);
+} AbilityEffect;
 
 typedef struct Ability {
     const char* Name;
@@ -60,8 +74,8 @@ typedef struct Ability {
 
     uint8_t RowMask;
 
-    AbilityDefinition Primary;
-    AbilityDefinition* Secondary;
+    AbilityEffect Primary;
+    AbilityEffect* Secondary;
 } Ability;
 
 extern Ability NullAbility;
