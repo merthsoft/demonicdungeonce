@@ -11,7 +11,7 @@ extern "C" {
 #define PartySize               4
 
 #define NumPalettes             4
-#define NumHeroClasses          8
+#define NumHeroClasses          6
 
 #define NumAbilitiesPerClass    6
 #define NumAbilitiesPerHero     4

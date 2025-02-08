@@ -4,6 +4,7 @@
         "main.h": "c",
         "ability.h": "c",
         "keypadc.h": "c",
-        "hero.h": "c"
+        "hero.h": "c",
+        "gfx.h": "c"
     }
 }

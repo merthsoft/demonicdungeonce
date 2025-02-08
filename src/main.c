@@ -22,32 +22,52 @@ Hero Kerm = {
     .Name = "Kerm",
     .Class = hc_Axeman,
     .Palette = hp_Gray,
+    
     .Health = 10,
-    .Faith = 10,
+    .MaxHealth = 10,
+    .Faith = 100,
+
+    .AbilityUnlockedFlags = ai_All,
+    .AbilityEnabledFlags = ai_AbilityOne | ai_AbilityTwo | ai_AbilityThree | ai_AbilityFour,
 };
 
 Hero Jon = {
     .Name = "TheStorm",
     .Class = hc_Knight,
     .Palette = hp_Red,
+    
     .Health = 10,
-    .Faith = 10,
+    .MaxHealth = 10,
+    .Faith = 100,
+
+    .AbilityUnlockedFlags = ai_All,
+    .AbilityEnabledFlags = ai_AbilityOne | ai_AbilityTwo | ai_AbilityThree | ai_AbilityFour,
 };
 
 Hero Tari = {
     .Name = "Tari",
     .Class = hc_Mage,
     .Palette = hp_Purple,
+    
     .Health = 10,
-    .Faith = 10,
+    .MaxHealth = 10,
+    .Faith = 100,
+
+    .AbilityUnlockedFlags = ai_All,
+    .AbilityEnabledFlags = ai_AbilityOne | ai_AbilityTwo | ai_AbilityThree | ai_AbilityFour,
 };
 
 Hero ElfPrince = {
     .Name = "ElfPrince",
     .Class = hc_Archer,
     .Palette = hp_Green,
+    
     .Health = 10,
-    .Faith = 10,
+    .MaxHealth = 10,
+    .Faith = 100,
+
+    .AbilityUnlockedFlags = ai_All,
+    .AbilityEnabledFlags = ai_AbilityOne | ai_AbilityTwo | ai_AbilityThree | ai_AbilityFour,
 };
 
 int main(void) {

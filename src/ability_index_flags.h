@@ -13,6 +13,8 @@ typedef enum AbilityIndexFlags {
     ai_AbilityFour  = 1 << 3,
     ai_AbilityFive  = 1 << 4,
     ai_AbilitySix   = 1 << 5,
+
+    ai_All          = 0b11111111,
 } AbilityIndexFlags;
 
 #ifdef __cplusplus

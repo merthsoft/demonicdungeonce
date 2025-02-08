@@ -120,13 +120,13 @@ void Render_Party(GameState* gameState) {
         gfx_SetColor(6);
         gfx_FillRectangle(Party_Draw_Health_Start_X + i * Party_Draw_Hero_Width + 2, Party_Draw_Health_Start_Y + 2, bar_empty_width - 5, bar_empty_height - 4);
         gfx_TransparentSprite_NoClip(bar_empty, Party_Draw_Health_Start_X + i * Party_Draw_Hero_Width, Party_Draw_Health_Start_Y);
-
+        
         gfx_SetColor(1);
         gfx_FillRectangle(Party_Draw_Divinity_Start_X + i * Party_Draw_Hero_Width + 2, Party_Draw_Divinity_Start_Y + 2, bar_empty_width - 5, bar_empty_height - 4);
         gfx_TransparentSprite_NoClip(bar_empty, Party_Draw_Divinity_Start_X + i * Party_Draw_Hero_Width, Party_Draw_Divinity_Start_Y);
         
         Render_Hero(gameState->Party[i], gameState->FrameNumber, Party_Draw_Start_X + i * Party_Draw_Hero_Width, Party_Draw_Start_Y, Party_Draw_Hero_Scale_X, Party_Draw_Hero_Scale_Y);
-
+        
         if (i == 0 || i == 1)
             gfx_Sprite_NoClip(ailments_tiles[i], Party_Draw_StatusIcons_Start_X + i * Party_Draw_Hero_Width, Party_Draw_StatusIcons_Start_Y);
 
@@ -178,9 +178,9 @@ void Render_Selector(uint8_t selectorNumber, uint24_t x, uint8_t y) {
 }
 
 void Render_State(GameState* gameState) {
+    Render_Combat_Frames();
     Render_Party(gameState);
     Render_Selector(0, Party_Draw_Start_X + gameState->SelectedHero * Party_Draw_Hero_Width + 10, gameState->FrameNumber*2 + 2);
     Render_Selector(1, Combat_Mode_Enemy_Start_X + (gameState->SelectedHero+1) * Party_Draw_Hero_Width - 2 + 10, (3-gameState->FrameNumber)*2 + 2);
-    Render_Combat_Frames();
     Render_Combat_Text(gameState);
 }
